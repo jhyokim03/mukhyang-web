@@ -123,3 +123,90 @@ footer {
   color: #888;
   font-size: 0.9rem;
 }
+
+/* 동아리원 소개 섹션 스타일 */
+.section-desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.member-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 대표자 카드 강조 */
+.member-card.leader {
+  border: 2px solid #222;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #222;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+/* 동양적 느낌의 아바타 아이콘 */
+.profile-icon {
+  width: 60px;
+  height: 60px;
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 15px auto;
+  border: 1px solid #ddd;
+}
+
+.member-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.goal-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.goal-list li {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.goal-list li:last-child {
+  margin-bottom: 0;
+}
